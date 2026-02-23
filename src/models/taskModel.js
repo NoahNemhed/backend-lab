@@ -4,11 +4,7 @@
 
 const db = require('../services/databaseService')
 
-let tasks = [
-  { id: 1, title: "task1", description: "This is task 1", status: "todo", priority: 1 },
-  { id: 2, title: "task2", description: "This is task 2", status: "doing", priority: 2 },
-  { id: 3, title: "task3", description: "This is task 3", status: "done", priority: 3 },
-];
+
 
 // get all tasks
 async function getAllTasks(){

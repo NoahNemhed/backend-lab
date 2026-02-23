@@ -11,7 +11,7 @@ const app = express();
 // Importera routes
 const indexRoutes = require('./routes/index');
 const taskRoutes = require('./routes/tasks')
-const dbTestRoutes = require("./routes/dbTest");
+const userRoutes = require('./routes/users')
 
 // Middleware (för JSON body senare)
 app.use(express.json());
@@ -25,10 +25,8 @@ app.use('/', indexRoutes);
 // Använd task route
 app.use('/api', taskRoutes)
 
-// db route
-app.use(dbTestRoutes);
-
-
+// Använd user route
+app.use('/api', userRoutes)
 
 
 
